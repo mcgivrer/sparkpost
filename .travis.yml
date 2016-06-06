@@ -1,0 +1,11 @@
+language: java
+install:
+  - sudo apt-get install ruby
+  - sudo apt-get install npm
+  - npm install karma
+  - npm install bower
+  - npm install grunt
+jdk:
+  - oraclejdk8
+script:
+  - mvn clean install -Pmongodb,prod,frontend
