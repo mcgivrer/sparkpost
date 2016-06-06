@@ -11,6 +11,7 @@ import static spark.Spark.halt;
 import static spark.Spark.post;
 import static spark.Spark.put;
 import static spark.Spark.threadPool;
+import static spark.Spark.port;
 
 /**
  * The main class for our demo. This class parse some data and serve those data
@@ -23,11 +24,12 @@ public class App {
 	private static final String WS_SECRET_KEY = "MySecretkey";
 
 	public static void main(String[] args) {
+		int port = 9000;
 		int maxThreads = 8;
 		int minThreads = 2;
 		int timeOutMillis = 30000;
 		threadPool(maxThreads, minThreads, timeOutMillis);
-
+		port(port);
 		// retrieve some data
 		get("/post", (request, response) -> {
 			return "post";
