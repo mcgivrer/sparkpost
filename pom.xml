@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fr.mcgivrer.apps</groupId>
+	<artifactId>sparkpost</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>SparkPost</name>
+	<description>A SparkJava demonstration project</description>
+
+	<dependencies>
+		<!-- http://mvnrepository.com/artifact/com.sparkjava/spark-core -->
+		<dependency>
+			<groupId>com.sparkjava</groupId>
+			<artifactId>spark-core</artifactId>
+			<version>2.5</version>
+		</dependency>
+
+		<!-- http://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+		<!-- http://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+
+		<!-- http://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<!-- http://maven.apache.org/plugins/maven-compiler-plugin/ -->
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>utf-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<url>http://mcgivrer.wordpress.com</url>
+	<inceptionYear>2016</inceptionYear>
+	<organization>
+		<name>mcgivrer.wordpress.com</name>
+		<url>mcgivrer.wordpress.com</url>
+	</organization>
+	<contributors>
+		<contributor>
+			<name>Frédéric Delorme</name>
+			<email>frederic.delorme@gmail.com</email>
+			<roles>
+				<role>Software Architect</role>
+			</roles>
+			<timezone>Europe/Paris</timezone>
+			<organization>WebContext</organization>
+			<organizationUrl>http://web-context.com/</organizationUrl>
+		</contributor>
+	</contributors>
+	<scm>
+		<url>http://github.com/mcgivrer/sparkpost</url>
+		<connection>scm:git:git@github.com:mcgivrer/sparkpost.git</connection>
+		<developerConnection>scm:git:git@github.com:mcgivrer/sparkpost.git</developerConnection>
+		<tag>${project.version}</tag>
+	</scm>
+	<issueManagement>
+		<url>http://github.com/mcgivrer/sparkpost/issues</url>
+		<system>github issue management</system>
+	</issueManagement>
+	<ciManagement>
+		<system>Travis-CI</system>
+		<url>http://travis-ci.org/mcgivrer/sparkpost</url>
+	</ciManagement>
+</project>
