@@ -78,7 +78,7 @@
 		<url>http://travis-ci.org/mcgivrer/sparkpost</url>
 	</ciManagement>
 	
-	<!-------------------------- BUILD ----------------------------------------------------->
+	<!-- ******************* BUILD ********************************************************* -->
 	<build>
 		<plugins>
 			<plugin>
@@ -96,7 +96,7 @@
 	</build>
 
 	<profiles>
-		<!-------------------------- Production ----------------------------------------------------->
+		<!-- **************** Production ********************************** -->
 		<profile>
 			<id>prod</id>
 			<build>
@@ -157,7 +157,7 @@
 			</build>
 		</profile>
 
-		<!----------------------- Profile to build AngularJS Front-End with npm/grunt/bower ------------------------>
+		<!-- ***** Profile to build AngularJS Front-End with npm/grunt/bower ***** -->
 		<profile>
 			<id>frontend</id>
 			<build>
@@ -233,7 +233,7 @@
 			</build>
 		</profile>
 
-		<!-------------------------- Embedded MongoDB server for dev a test purpose --------------------------------->
+		<!-- ***** Embedded MongoDB server for dev a test purpose ***** -->
 		<profile>
 			<id>mongodb</id>
 			<activation>
@@ -244,6 +244,7 @@
 				<dependency>
 					<groupId>de.flapdoodle.embed</groupId>
 					<artifactId>de.flapdoodle.embed.mongo</artifactId>
+					<version>1.50.5</version>
 					<scope>runtime</scope>
 				</dependency>
 			</dependencies>

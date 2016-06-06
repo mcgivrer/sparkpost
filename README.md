@@ -7,6 +7,11 @@
 
 This small java project is a demo project to test the SparkJava framework, a light java micro-service framewwork.
 
+
+if you wanna test it:
+
+$> java -jar sparkpost-0.0.1-SNAPSHOT.jar
+
 Have Fun !
 
 McG.
