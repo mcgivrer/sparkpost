@@ -21,6 +21,13 @@
 			<artifactId>log4j-core</artifactId>
 			<version>2.6</version>
 		</dependency>
+		<!-- http://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.21</version>
+		</dependency>
+
 
 		<!-- http://mvnrepository.com/artifact/com.google.code.gson/gson -->
 		<dependency>

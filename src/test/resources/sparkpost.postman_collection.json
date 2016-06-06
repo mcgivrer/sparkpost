@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "sparkpost",
+		"_postman_id": "76f35feb-0eab-0677-3616-557dec2a1bd9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9000/post",
+			"request": {
+				"url": "http://localhost:9000/post",
+				"method": "GET",
+				"header": [
+					{
+						"key": "WS-KEY",
+						"value": "MySecretkey",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "retrieve all posts"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/post/1",
+			"request": {
+				"url": "http://localhost:9000/post/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "WS-KEY",
+						"value": "MySecretkey",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": "retrieve one post with id=1"
+			},
+			"response": []
+		}
+	]
+}
