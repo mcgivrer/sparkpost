@@ -39,7 +39,7 @@ public class App {
 		get("/post/:id", (request, response) -> {
 			if (request.params(":id")!=null) {
 				String postId = request.params(":id");
-				return "Post id: " + request.params(":id");
+				return "Post id: " + postId;
 
 			} else {
 				halt(404, "post id unknown");
@@ -56,7 +56,7 @@ public class App {
 		put("/post/:id", (request, response) -> {
 			if (request.params(":id")!=null) {
 				String postId = request.params(":id");
-				return "post updated";
+				return "post "+postId+ " updated";
 
 			} else {
 				halt(404, "post id unknown");
