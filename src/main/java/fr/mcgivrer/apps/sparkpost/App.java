@@ -32,7 +32,7 @@ public class App {
 		port(port);
 		// retrieve some data
 		get("/post", (request, response) -> {
-			return "post";
+			return "list of posts";
 		}, new JsonTransformer());
 
 		// retrieve some data with parameters
