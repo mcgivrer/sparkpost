@@ -9,7 +9,7 @@ This small java project is a demo project to test the SparkJava framework, a lig
 
 if you wanna test it:
 
-$> java -jar sparkpost-0.0.1-SNAPSHOT.jar
+$> java -jar sparkpost-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 
 Have Fun !
 

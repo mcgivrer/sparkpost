@@ -6,6 +6,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SparkPost</name>
 	<description>A SparkJava demonstration project</description>
+	
+	<properties>
+	<mainClass>fr.mcgivrer.apps.sparkpost.App</mainClass>
+	</properties>
 
 	<dependencies>
 		<!-- http://mvnrepository.com/artifact/com.sparkjava/spark-core -->
@@ -92,6 +96,34 @@
 					<encoding>utf-8</encoding>
 				</configuration>
 			</plugin>
+			<!-- Package a One full of dependencies JAR (Buffed Edition) -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<encoding>utf-8</encoding>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<mainClass>${mainClass}</mainClass>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-my-jar-with-dependencies</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
 
