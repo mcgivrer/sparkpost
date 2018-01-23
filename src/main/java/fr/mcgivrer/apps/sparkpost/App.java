@@ -17,7 +17,6 @@ import static spark.Spark.port;
  * The main class for our demo. This class parse some data and serve those data
  * to JSON client.
  * 
- * @author frederic
  */
 public class App {
 
