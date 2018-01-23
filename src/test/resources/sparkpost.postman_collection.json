@@ -1,14 +1,14 @@
 {
 	"variables": [],
 	"info": {
-		"name": "sparkpost",
+		"name": "Sparkpost",
 		"_postman_id": "76f35feb-0eab-0677-3616-557dec2a1bd9",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "http://localhost:9000/post",
+			"name": "Retrieve all posts",
 			"request": {
 				"url": "http://localhost:9000/post",
 				"method": "GET",
@@ -23,12 +23,12 @@
 					"mode": "formdata",
 					"formdata": []
 				},
-				"description": "retrieve all posts"
+				"description": "retrieve all posts from our spark java microservice."
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost:9000/post/1",
+			"name": "Retrieve post id:1",
 			"request": {
 				"url": "http://localhost:9000/post/1",
 				"method": "GET",
@@ -43,7 +43,7 @@
 					"mode": "formdata",
 					"formdata": []
 				},
-				"description": "retrieve one post with id=1"
+				"description": "retrieve one post with id=1 from our spark java microservice."
 			},
 			"response": []
 		}
