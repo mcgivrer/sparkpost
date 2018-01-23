@@ -37,7 +37,7 @@ public class App {
 
 		// retrieve some data with parameters
 		get("/post/:id", (request, response) -> {
-			if (request.params(":id")!=null) {
+			if (request.params(":id") != null) {
 				String postId = request.params(":id");
 				return "Post id: " + postId;
 
@@ -54,9 +54,9 @@ public class App {
 
 		// Update some data
 		put("/post/:id", (request, response) -> {
-			if (request.params(":id")!=null) {
+			if (request.params(":id") != null) {
 				String postId = request.params(":id");
-				return "post "+postId+ " updated";
+				return "post " + postId + " updated";
 
 			} else {
 				halt(404, "post id unknown");
